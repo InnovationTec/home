@@ -1,71 +1,14 @@
+body {
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
 .App {
   text-align: center;
-}
-
-.cabezera {
-  border-radius: 5px;
-  min-height: 30px;
-  text-align: center;
-  padding: 5px 5px;
-  margin: 5px 5px;
-  animation-name: texto;
-  animation-duration: 5s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  font-weight: bolder;
-}
-.cabezera1 {
-  color: blue;
-}
-.cabezera2 {
-  color: red;
-}
-
-@keyframes texto {
-  from {
-    color: white;
-    text-shadow: 1px 1px black;
-    transform: scale(1.2);
-  }
-  to {
-    transform: scale(1.5);
-    color: red;
-    text-shadow: 1px 1px black;
-  }
-}
-
-.menu-nav li {
-  width: 300px;
-  padding: 2px;
-  margin: 2px;
-  margin-right: 25px;
-  margin-bottom: 15px;
-  text-decoration: none;
-  list-style: none;
-  text-transform: uppercase;
-  text-align: center;
-  color: rgb(28, 6, 126);
-  background-color: #000000a3;
-  line-height: 35px;
-  border-color: 1px solid rgb(9, 101, 182);
-  border-radius: 15px;
-  font-weight: bold;
-  transition: 2.5s;
-  animation-name: menu;
-  animation-duration: 3s;
-}
-
-.menu-nav li:hover {
-  position: relative;
-  text-decoration: none;
-  list-style: none;
-  font-size: 25px;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 1px black;
-  color: rgb(241, 239, 239);
-  background-color: rgb(99, 67, 241);
-  text-shadow: 1px 1px red;
+  max-width: 100%;
 }
 
 .App-header1 {
@@ -81,6 +24,7 @@
   pointer-events: none;
   border-radius: 25%;
   margin-bottom: 15%;
+  padding-top: 10%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -91,17 +35,19 @@
 }
 @keyframes App-logo-spin {
   0% {
-    transform: rotateX(290deg);
+    transform: rotateZ(0deg);
+    transform: scale(1.1);
   }
 
   50% {
-    transform: rotateX(360deg);
+    transform: rotateX(359deg);
+    transform: scale(1.2);
   }
 
   100% {
-    transform: rotateZ(216deg);
+    transform: rotateZ(266deg);
     transform: rotateX(359deg);
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 }
 
@@ -124,78 +70,22 @@
   text-shadow: 2px 2px 2px black;
   list-style-type: none;
   text-decoration: none;
-}
-
-/*carousel*/
-
-#slider {
-  max-width: 100%;
-  overflow: hidden;
-  margin-top: 5px;
-  background-color: black;
-}
-
-#slider figure {
-  position: relative;
-  width: 500%;
-  top: 1px;
-  margin: 0px;
-  left: 0;
-  animation: 20s slider infinite;
-  animation-delay: 1s;
-}
-
-#slider figure img {
-  width: 20%;
-  float: left;
-}
-
-@keyframes slider {
-  0% {
-    left: 0%;
-  }
-  20% {
-    left: 0%;
-  }
-  25% {
-    left: -100%;
-  }
-  45% {
-    left: -100%;
-  }
-  50% {
-    left: -200%;
-  }
-  70% {
-    left: -200%;
-  }
-  75% {
-    left: -300%;
-  }
-  95% {
-    left: -300%;
-  }
-  100% {
-    left: -400%;
-  }
-  100% {
-    left: -400%;
-  }
+  text-shadow: 2px 2px 3px rgb(255, 255, 255);
 }
 
 /*arrowup start*/
 
 .arrowup {
-  margin-bottom: 0px;
+  margin-bottom: 100px;
   display: inline-block;
   color: whitesmoke;
   text-align: right;
-  position: fixed;
+  position: relative;
   bottom: 5px;
-  right: 30px;
-  font-size: 52px;
+
+  font-size: 30px;
   opacity: 0.7;
-  z-index: 600;
+  z-index: 0;
   transition: 1s;
   transition-delay: 0.5s;
 }
@@ -208,4 +98,59 @@
 .arrowup:hover a {
   color: rgb(250, 12, 12);
   font-size: 35px;
+}
+
+.nav-container {
+  background: linear-gradient(to left, #2b32b2, #000000);
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  text-decoration: none;
+  list-style: none;
+}
+
+.Nav-bar-link {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  line-height: 30px;
+  border: 1px solid blanchedalmond;
+  border-radius: 5px;
+  padding: 2px;
+  background: linear-gradient(to left, #2b32b2, #000000);
+  text-decoration: none;
+  text-shadow: 2px 2px 3px rgb(9, 9, 9);
+}
+
+.sloganhome {
+  font-size: 18px;
+  color: white;
+  text-shadow: 2px 2px 3px rgb(2, 2, 2), 2px 2px 3px rgb(4, 4, 4);
+  font-weight: 500;
+  font-family: amita;
+}
+
+/* Cards/*/
+.desarrollowebcard li {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  text-align-last: center;
+  text-shadow: 1px 1px 1px rgb(100, 15, 245), 1px 1px 1px rgb(138, 10, 10),
+    1px 1px 1px rgb(138, 10, 10), 1px 1px 1px rgb(138, 10, 10),
+    1px 1px 1px rgb(138, 10, 10);
+}
+.cardbody {
+  color: whitesmoke;
+  background-color: transparent;
+  filter: opacity(0.5);
+  transition: 1s;
+  border: 5px solid whitesmoke;
+  border-radius: 20px;
+}
+.cardbody:hover {
+  filter: opacity(1);
+  background-color: rgb(6, 33, 239);
+  box-shadow: 2px 4px 3px rgb(0, 0, 0), 2px 4px 3px rgb(0, 0, 0);
 }

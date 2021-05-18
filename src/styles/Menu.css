@@ -1,0 +1,41 @@
+.menu_principal {
+  text-align: center;
+}
+
+.menu-nav li {
+  width: 90%;
+  padding-top: 5px;
+  margin-bottom: 15px;
+  margin-top: 5%;
+  text-decoration: none;
+  list-style: none;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 15px;
+  font-weight: bold;
+  transition: 2.5s;
+  animation-name: menu;
+  animation-duration: 3s;
+  color: rgb(214, 212, 222);
+  background-color: rgba(0, 21, 255, 0.194);
+  text-shadow: 1px 1px 1px rgb(58, 6, 160);
+  border-color: 1px solid rgb(9, 101, 182);
+  border-bottom: 1px solid red;
+}
+
+.menu-nav li:hover {
+  text-decoration: none;
+  list-style: none;
+  font-size: 25px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px black;
+  color: rgb(241, 239, 239);
+  background-color: rgba(37, 3, 230, 0.9);
+  text-shadow: 1px 1px 1px red;
+  border-bottom: 1px solid rgb(254, 254, 254);
+}
