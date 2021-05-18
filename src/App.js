@@ -89,9 +89,9 @@ function App() {
               DESCUBRE LA NUEVA FORMA DE HACER MARKETING
             </div>
             <div className="arrowup">
-              <a href="/Informacion">
+              <Link to="/Informacion">
                 <i className="fa fa-arrow-circle-right"></i>
-              </a>
+              </Link>
             </div>
             <Footer />
           </Route>

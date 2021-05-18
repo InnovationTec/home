@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "../styles/App.css";
 
 class NextAbout extends Component {
@@ -8,9 +9,9 @@ class NextAbout extends Component {
         <div className="NextInformation_Container">
           <div className="NextAbout">
             <div className="arrowup">
-              <a href="/">
+              <Link to="/">
                 <i className="fa fa-arrow-circle-right"></i>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

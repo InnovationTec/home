@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "../styles/App.css";
 
 class NextPortafolio extends Component {
@@ -8,9 +9,9 @@ class NextPortafolio extends Component {
         <div className="NextPortafolio_Container">
           <div className="NextPortafolio">
             <div className="arrowup">
-              <a href="/Aboutus">
+              <Link to="/Aboutus">
                 <i className="fa fa-arrow-circle-right"></i>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
