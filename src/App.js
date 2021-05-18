@@ -7,10 +7,6 @@ import Informacion from "./layout/Informacion";
 import Servicios from "./layout/Servicios";
 import logo from "./img/Proto.png";
 import Aboutus from "./Componentes/Aboutus";
-import NextInformation from "./Routes/NextInformacion";
-import NextServicios from "./Routes/NextServicios";
-import NextPortafolio from "./Routes/NextPortafolio";
-import NextAbout from "./Routes/NextAbout";
 
 import "./styles/App.css";
 
@@ -54,28 +50,24 @@ function App() {
           <Route path="/Informacion" exact>
             Informacion
             <Informacion />
-            <NextInformation></NextInformation>
             <Footer />
           </Route>
 
           <Route path="/Servicios" exact>
             Servicios
             <Servicios />
-            <NextServicios></NextServicios>
             <Footer />
           </Route>
 
           <Route path="/Portafolio" exact>
             <Header />
             Portafolio
-            <NextPortafolio></NextPortafolio>
           </Route>
 
           <Route path="/Aboutus" exact>
             <Header />
             Aboutus
             <Aboutus />
-            <NextAbout></NextAbout>
           </Route>
 
           <Route path="/" exact>
@@ -87,11 +79,6 @@ function App() {
             </Link>
             <div className="sloganhome">
               DESCUBRE LA NUEVA FORMA DE HACER MARKETING
-            </div>
-            <div className="arrowup">
-              <Link to="/Informacion">
-                <i className="fa fa-arrow-circle-right"></i>
-              </Link>
             </div>
             <Footer />
           </Route>
